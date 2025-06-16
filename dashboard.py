@@ -113,6 +113,3 @@ elif page == "Exploration":
         map_data = X_test.copy()
         map_data["target"] = predictions["target"]
         st.map(map_data[["LAT", "LONG"]])
-
-st.markdown("---")
-st.caption("🧠 Dashboard généré avec Streamlit — par Data Analyst.")
