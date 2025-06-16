@@ -9,7 +9,7 @@ import plotly.express as px
 def load_data():
     X_test = pd.read_csv("X_test.csv")
     y_test = pd.read_csv("y_test.csv")
-    predictions = pd.read_csv("predictions.csv").round(2)
+    predictions = pd.read_csv("predictions.csv")
     feature_importance = pd.read_csv("feature_importance.csv")
     return X_test, y_test, predictions, feature_importance
 
